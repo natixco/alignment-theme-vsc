@@ -1,16 +1,8 @@
-# alignment README
+# Alignment theme
 
-## Working with Markdown
+VSCode theme inspired by the colors of [this music video](https://youtu.be/GbGFMiLufVc).
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+Tested with only C# and JS.
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+![](https://raw.githubusercontent.com/natixco/alignment-theme-vsc/main/screenshots/js.png)
+![](https://raw.githubusercontent.com/natixco/alignment-theme-vsc/main/screenshots/cs.png)

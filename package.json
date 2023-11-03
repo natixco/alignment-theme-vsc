@@ -3,9 +3,12 @@
   "displayName": "Alignment Theme",
   "version": "0.0.1",
   "publisher": "natixco",
-	"license": "MIT",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.84.0"
+  },
+  "scripts": {
+    "build": "npx tsx src/main.ts"
   },
   "categories": [
     "Themes"
