@@ -1,0 +1,45 @@
+{
+  "name": "alignment-theme",
+  "displayName": "Alignment Theme",
+  "version": "0.0.1",
+  "publisher": "natixco",
+	"license": "MIT",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Alignment",
+        "uiTheme": "vs-dark",
+        "path": "./themes/alignment.json"
+      },
+      {
+        "label": "Alignment (italic)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/alignment-italic.json"
+      },
+      {
+        "label": "Alignment darker",
+        "uiTheme": "vs-dark",
+        "path": "./themes/alignment-darker.json"
+      },
+      {
+        "label": "Alignment darker (italic)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/alignment-darker-italic.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "polished": "^4.2.2"
+  }
+}
