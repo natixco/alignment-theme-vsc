@@ -41,8 +41,8 @@ export const getTokenColors = (italic: boolean, {
     },
     {
       scope: [
-        'variable.other.property'
-      ],
+        'variable.other.property',
+        ],
       settings: {
         foreground: yellow,
       },
@@ -53,6 +53,14 @@ export const getTokenColors = (italic: boolean, {
       ],
       settings: {
         foreground: white,
+      }
+    },
+    {
+      scope: [
+        'support.type.primitive'
+      ],
+      settings: {
+        foreground: violet,
       }
     },
     {
@@ -202,7 +210,8 @@ export const getTokenColors = (italic: boolean, {
     },
     {
       scope: [
-        'variable.parameter'
+        'variable.parameter',
+        'entity.name.variable.parameter',
       ],
       settings: {
         fontStyle: getFontStyle(italic),
@@ -381,11 +390,36 @@ export const getTokenColors = (italic: boolean, {
       },
     },
     {
-      scope: ['meta.object'],
+      scope: [
+        'meta.object'
+      ],
       settings: {
         foreground: yellow,
       }
-    }
+    },
+    {
+      scope: [
+        'punctuation.definition.block',
+        'punctuation.definition.parameters',
+        'punctuation.parenthesis',
+        'punctuation.curlybrace',
+        'punctuation.squarebracket',
+        'meta.brace.round',
+        'meta.brace.square',
+        'meta.brace.curly',
+      ],
+      settings: {
+        foreground: comment,
+      },
+    },
+    {
+      scope: [
+        'keyword.other.is',
+      ],
+      settings: {
+        foreground: violet,
+      },
+    },
   ];
 
 const getFontStyle = (italic: boolean) => italic ? 'italic' : 'normal';
