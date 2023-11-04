@@ -13,9 +13,8 @@ export const getTokenColors = (italic: boolean, {
   white,
   red,
   yellow,
-  violet,
+  purple,
   comment,
-  foreground,
 }: Palette): TokenColor[] => [
     {
       scope: [
@@ -60,7 +59,7 @@ export const getTokenColors = (italic: boolean, {
         'support.type.primitive'
       ],
       settings: {
-        foreground: violet,
+        foreground: purple,
       }
     },
     {
@@ -69,7 +68,7 @@ export const getTokenColors = (italic: boolean, {
         'meta.jsx.children.js.jsx'
       ],
       settings: {
-        foreground: foreground,
+        foreground: white,
       },
     },
     {
@@ -86,7 +85,7 @@ export const getTokenColors = (italic: boolean, {
         'invalid.deprecated'
       ],
       settings: {
-        foreground: violet,
+        foreground: purple,
       },
     },
     {
@@ -94,7 +93,7 @@ export const getTokenColors = (italic: boolean, {
         'keyword.type'
       ],
       settings: {
-        foreground: violet,
+        foreground: purple,
       },
     },
     {
@@ -151,7 +150,7 @@ export const getTokenColors = (italic: boolean, {
         'storage.type.function.arrow',
       ],
       settings: {
-        foreground: violet,
+        foreground: purple,
       },
     },
     {
@@ -205,7 +204,7 @@ export const getTokenColors = (italic: boolean, {
         'support.class.console.js'
       ],
       settings: {
-        foreground: foreground,
+        foreground: white,
       },
     },
     {
@@ -227,7 +226,7 @@ export const getTokenColors = (italic: boolean, {
         'punctuation.definition.string.end',
       ],
       settings: {
-        foreground: foreground,
+        foreground: white,
       },
     },
     {
@@ -386,7 +385,7 @@ export const getTokenColors = (italic: boolean, {
       ],
       settings: {
         fontStyle: getFontStyle(italic),
-        foreground: violet,
+        foreground: purple,
       },
     },
     {
@@ -417,7 +416,7 @@ export const getTokenColors = (italic: boolean, {
         'keyword.other.is',
       ],
       settings: {
-        foreground: violet,
+        foreground: purple,
       },
     },
   ];

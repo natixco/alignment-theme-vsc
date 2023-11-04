@@ -1,13 +1,13 @@
 import { lighten, darken } from 'polished';
 import { Palette } from './palette';
 
-export const getColors = ({ blue, white, red, yellow, comment, magenta, foreground, background }: Palette) => ({
+export const getColors = ({ blue, white, purple, red, yellow, comment, background }: Palette) => ({
   'activityBar.background': background,
   'activityBar.foreground': comment,
   'activityBarBadge.background': red,
-  'activityBarBadge.foreground': foreground,
+  'activityBarBadge.foreground': white,
   'editorLineNumber.foreground': darken(0.2, comment),
-  'editorLineNumber.activeForeground': foreground,
+  'editorLineNumber.activeForeground': white,
 
   'badge.background': darken(0.2, blue),
   'badge.foreground': '#fff',
@@ -21,12 +21,12 @@ export const getColors = ({ blue, white, red, yellow, comment, magenta, foregrou
   'dropdown.background': darken(0.025, background),
   'dropdown.listBackground': darken(0.01, background),
   'dropdown.border': darken(0.04, background),
-  'dropdown.foreground': foreground,
+  'dropdown.foreground': white,
   'editorWidget.background': darken(0.02, background),
   'editorWidget.border': darken(0.04, background),
 
-  foreground,
-  'editor.foreground': foreground,
+  'foreground': white,
+  'editor.foreground': white,
   'editor.background': background,
   'editorIndentGuide.background': lighten(0.05, background),
   'editorIndentGuide.activeBackground': lighten(0.15, background),
@@ -63,7 +63,7 @@ export const getColors = ({ blue, white, red, yellow, comment, magenta, foregrou
 
   'input.background': lighten(0.065, background),
   'input.border': lighten(0.1, background),
-  'input.foreground': foreground,
+  'input.foreground': white,
   'input.placeholderForeground': comment,
   'inputOption.activeBorder': blue,
   'inputValidation.errorBackground': lighten(0.065, background),
@@ -74,19 +74,19 @@ export const getColors = ({ blue, white, red, yellow, comment, magenta, foregrou
   'inputValidation.warningBorder': yellow,
 
   'list.activeSelectionBackground': lighten(0.075, background),
-  'list.activeSelectionForeground': foreground,
+  'list.activeSelectionForeground': white,
   'list.dropBackground': darken(0.03, background),
   'list.focusBackground': darken(0.03, background),
   'list.focusForeground': comment,
   'list.hoverBackground': lighten(0.15, background),
-  'list.hoverForeground': foreground,
+  'list.hoverForeground': white,
   'list.inactiveSelectionBackground': lighten(0.075, background),
-  'list.inactiveSelectionForeground': foreground,
+  'list.inactiveSelectionForeground': white,
   'list.highlightForeground': blue,
 
   'panel.background': background,
   'panelTitle.activeBorder': darken(0.04, blue),
-  'panelTitle.activeForeground': foreground,
+  'panelTitle.activeForeground': white,
   'panelTitle.inactiveForeground': comment,
 
   'pickerGroup.border': darken(0.05, background),
@@ -111,7 +111,7 @@ export const getColors = ({ blue, white, red, yellow, comment, magenta, foregrou
   'statusBarItem.activeBackground': lighten(0.03, background),
 
   'tab.activeBackground': darken(0.04, background),
-  'tab.activeForeground': foreground,
+  'tab.activeForeground': white,
   'tab.border': background,
   'tab.activeBorder': darken(0.04, red),
   'tab.inactiveBackground': lighten(0.015, background),
@@ -124,19 +124,19 @@ export const getColors = ({ blue, white, red, yellow, comment, magenta, foregrou
   'terminal.ansiGreen': white,
   'terminal.ansiYellow': yellow,
   'terminal.ansiBlue': blue,
-  'terminal.ansiMagenta': magenta,
-  'terminal.ansiCyan': blue, // TODO
-  'terminal.ansiWhite': foreground,
+  'terminal.ansiMagenta': purple, // TODO: magenta
+  'terminal.ansiCyan': blue, // TODO: cyan
+  'terminal.ansiWhite': white,
   'terminal.ansiBrightBlack': '#000000',
   'terminal.ansiBrightRed': red,
   'terminal.ansiBrightGreen': white,
   'terminal.ansiBrightYellow': yellow,
   'terminal.ansiBrightBlue': blue,
-  'terminal.ansiBrightMagenta': magenta,
-  'terminal.ansiBrightCyan': blue, // TODO
-  'terminal.ansiBrightWhite': foreground,
+  'terminal.ansiBrightMagenta': purple, // TODO: magenta
+  'terminal.ansiBrightCyan': blue, // TODO: cyan
+  'terminal.ansiBrightWhite': white,
   'terminal.background': background,
-  'terminal.foreground': foreground,
+  'terminal.foreground': white,
   'terminalCursor.background': comment,
   'terminalCursor.foreground': comment,
 

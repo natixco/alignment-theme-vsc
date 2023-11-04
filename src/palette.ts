@@ -3,10 +3,8 @@ export type Palette = {
   white: string;
   red: string;
   yellow: string;
-  violet: string;
+  purple: string;
   comment: string;
-  magenta: string;
-  foreground: string;
   background: string;
 }
 
@@ -14,10 +12,8 @@ const blue = '#3C98F5';
 const white = '#EADEDA';
 const red = '#ea5d36';
 const yellow = '#eabf38';
-const violet = '#D45CFF';
+const purple = '#D45CFF';
 const comment = '#9197AE';
-const magenta = '#FF4082';
-const foreground = '#EADEDA';
 const background = '#1E1E29';
 const backgroundDarker = '#161622';
 
@@ -26,10 +22,8 @@ export const dark: Palette = {
   white,
   red,
   yellow,
-  violet,
+  purple,
   comment,
-  magenta,
-  foreground,
   background,
 };
 
@@ -38,9 +32,7 @@ export const darker: Palette = {
   white,
   red,
   yellow,
-  violet,
+  purple,
   comment,
-  magenta,
-  foreground,
   background: backgroundDarker,
 };
